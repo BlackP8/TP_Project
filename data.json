@@ -1,0 +1,28 @@
+[ {
+  "@class" : "sample.models.Planet",
+  "id" : 1,
+  "radius" : 49000,
+  "atmosphere" : true,
+  "gravity_force" : 10.5,
+  "distance" : 320000.0
+}, {
+  "@class" : "sample.models.Star",
+  "id" : 2,
+  "density" : 0.8,
+  "temp" : 6000,
+  "color" : "Orange",
+  "distance" : 1000000.0
+}, {
+  "@class" : "sample.models.Comet",
+  "id" : 3,
+  "period" : 180,
+  "name" : "Faust",
+  "distance" : 40000.0
+}, {
+  "@class" : "sample.models.Star",
+  "id" : 4,
+  "density" : 10.0,
+  "temp" : 456000,
+  "color" : "Blue",
+  "distance" : 1.23415359E7
+} ]

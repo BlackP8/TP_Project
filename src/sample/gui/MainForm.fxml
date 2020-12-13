@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="450.0" prefWidth="850.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gui.MainFormController">
+   <children>
+      <AnchorPane prefHeight="367.0" prefWidth="850.0">
+         <children>
+            <TableView fx:id="mainTable" layoutY="151.0" prefHeight="286.0" prefWidth="850.0" />
+            <VBox layoutY="64.0">
+               <children>
+                  <MenuBar prefHeight="25.0" prefWidth="850.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Файл">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#onSaveToFileClick" text="Сохранить" />
+                              <MenuItem mnemonicParsing="false" onAction="#onDownloadFromFileClick" text="Загрузить" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Данные">
+                        <items>
+                          <MenuItem fx:id="addData" mnemonicParsing="false" onAction="#addClick" text="Добавить" />
+                              <MenuItem fx:id="editBtn" mnemonicParsing="false" onAction="#onEditClick" text="Редактировать" />
+                              <MenuItem fx:id="btnDelete" mnemonicParsing="false" onAction="#onDeleteClick" text="Удалить" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </VBox>
+            <Label layoutX="14.0" layoutY="114.0" text="Тип объекта" />
+            <ChoiceBox fx:id="cmdObjType" layoutX="91.0" layoutY="110.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
